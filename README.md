@@ -38,7 +38,43 @@ curtosis:mide cuán “picuda” es la distribución y qué tan pesadas son sus 
 
 entropy: mide complejidad de los coeficientes,más cerca de 0 = mayor entropía.
 
-5) Resultados del EDA
+5) Métricas de Éxito
+
+Exactitud (Accuracy): el modelo debe alcanzar al menos 90%.
+
+Recall en clase “falso”: prioridad que el modelo detecte más del 95% de billetes falsos, para minimizar riesgos de aceptar uno.
+
+Alcance del Proyecto
+
+MVP: construir un modelo de clasificación en Jupyter Notebook, validado con métricas básicas.
+
+Futuro: integrar en un pipeline MLOps con orquestación, despliegue y monitoreo.
+
+6) Timeline y Responsables
+
+| Fase | Actividad                                        | Responsable       | Tiempo estimado |
+| ---- | ------------------------------------------------ | ----------------- | --------------- |
+| 1    | Revisión del dataset y EDA                       | Carolina Restrepo | 1 semana        |
+| 2    | Preprocesamiento y entrenamiento de modelos base | Carolina Restrepo | 1 semana        |
+| 3    | Evaluación, documentación y presentación         | Carolina Restrepo | 4 días          |
+
+7) Estrategia de Preprocesamiento
+
+Verificación y eliminación de nulos (no aplicó en este dataset).
+
+Normalización de variables numéricas para modelos sensibles a escala.
+
+Separación en conjuntos train/test (80/20).
+
+Evaluar balance de clases (dataset está equilibrado ≈55% auténticos / 45% falsos).
+
+8) Baseline de Rendimiento
+
+Modelo baseline: Regresión Logística simple.
+
+Métricas esperadas: Accuracy ~90% y Recall clase “falso” >95%.
+
+9) Resultados del EDA
 
 Tamaño y calidad de datos
 
@@ -60,7 +96,7 @@ curtosis:Los billetes falsos presentan más casos con curtosis muy alta —es de
 
 entropía: tienen cajas muy parecidas, no se distingue bien entre auténticos y falsos: los dos grupos se comportan casi igual.
 
-6)conclusión: 
+10) conclusión: 
 
 variance > 0 y skewness > 0 → más probable Auténtico.
 variance < 0 y/o curtosis alta → más probable Falso.
