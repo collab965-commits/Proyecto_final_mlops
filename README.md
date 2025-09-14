@@ -31,8 +31,11 @@ Tamaño aproximado: 1.372 filas × 5 columnas
 
 
 variance:mide cuánta dispersión tienen los coeficientes, valores altos → mucha variación/contraste en la textura; valores bajos → textura más uniforme.
+
 skewness:mide si la distribución es simétrica o si tiene cola más larga a un lado, mucha asimetría = presencia de coeficientes atípicos (bordes/texturas raras).
+
 curtosis:mide cuán “picuda” es la distribución y qué tan pesadas son sus colas, curtosis alta sugiere patrones muy marcados en la textura (posible señal de falsificación).
+
 entropy: mide complejidad de los coeficientes,más cerca de 0 = mayor entropía.
 
 5) Resultados del EDA
@@ -50,10 +53,14 @@ Nulos: 0 (no se requieren imputaciones)
 | **Total** | —           | **1.372** |  **100%** |
 
 variance:Los billetes auténticos suelen tener variance positiva (mayores a 0) y Los billetes falsos suelen tener variance negativa (menores a 0).
+
 skewness:Los billetes auténticos suelen tener asimetría hacia la derecha,los falsos suelen tener asimetría neutra o hacia la izquierda  
+
 curtosis:Los billetes falsos presentan más casos con curtosis muy alta —es decir, picos muy marcados y valores extremos en la textura—, mientras que los auténticos rara vez alcanzan esos extremos. 
+
 entropía: tienen cajas muy parecidas, no se distingue bien entre auténticos y falsos: los dos grupos se comportan casi igual.
 
-#conclusión: 
-#variance > 0 y skewness > 0 → más probable Auténtico.
-#variance < 0 y/o curtosis alta → más probable Falso.
+6)conclusión: 
+
+variance > 0 y skewness > 0 → más probable Auténtico.
+variance < 0 y/o curtosis alta → más probable Falso.
