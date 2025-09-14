@@ -1,0 +1,102 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+# Cargar dataset
+
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/00267/data_banknote_authentication.txt"
+cols = ["variance", "skewness", "curtosis", "entropy", "class"]
+df = pd.read_csv(url, header=None, names=cols)
+
+# 1) Mostrar la tabla (primeras filas)
+print("\n# 1) Primeras 10 filas")
+print(df.head(10).to_string(index=False))
+
+
+# 2) Limpiar los datos (eliminar filas con valores nulos)
+print("\n# 2) Nulos por columna (antes de limpiar)")
+print(df.isna().sum())
+df = df.dropna().copy()
+print("Filas después de dropna:", len(df))
+
+# 3) Medir el tamaño de la tabla
+n_filas, n_cols = df.shape
+print(f"\n# 3) Tamaño de la tabla: {n_filas} filas x {n_cols} columnas")
+
+# 4) Tipos de datos
+tipo = df.dtypes
+print("\n# 4) Tipos de datos")
+print(tipo)
+
+# 5) Resumen estadístico
+print("\n# 5) Estadísticas descriptivas")
+print(df.describe().to_string())
+
+#Descripción de las columnas:
+#variance:mide cuánta dispersión tienen los coeficientes, valores altos → mucha variación/contraste en la textura; valores bajos → textura más uniforme.
+#skewness:mide si la distribución es simétrica o si tiene cola más larga a un lado, mucha asimetría = presencia de coeficientes atípicos (bordes/texturas raras).
+#curtosis:mide cuán “picuda” es la distribución y qué tan pesadas son sus colas, curtosis alta sugiere patrones muy marcados en la textura (posible señal de falsificación).
+#entropy: mide complejidad de los coeficientes,más cerca de 0 = mayor entropía.
+
+# 6) Distribución de la clase
+print("\n# Bonus) Distribución de la clase (0=auténtico, 1=falso)")
+print(df["class"].value_counts())
+print("\nProporción:")
+print(df["class"].value_counts(normalize=True).round(3))
+
+# 7) Distribución de la etiqueta (class: 0=auténtico, 1=falso)
+import plotly.express as px
+
+for col in ["variance", "skewness", "curtosis", "entropy"]:
+    fig = px.histogram(df, x=col, nbins=30, title=f"Distribución de {col}")
+    fig.show()
+
+#Conclusión variance: El histograma de variance es unimodal (un solo pico) y casi simétrico alrededor de 0. Esto sugiere que, por sí sola, no separa claramente billetes falsos de auténticos, y su aporte predictivo se potenciará al combinarla con skewness, curtosis y entropy.
+#Conclusión skewness: La distribución de skewness es asimétrica a la izquierda, con mayor densidad entre 0 y +5 y una cola negativa larga. Podria haber existencia de valores atípicos (textura/impresión irregular) lo que podría indicar billetes falsos
+#Conclusión curtosis: El gráfico curtosis muestra que casi todos los billetes están en valores normales,pero hay unos pocos con valores muy altos lo que podria decir que corresponde a casos atípicos que podrían estar relacionados con billetes falsos
+#Conclusión entropía: La entropía se concentra cerca de 0, pero existen pocos billetes con entropía muy baja (cola hacia la izquierda). Estos casos son raros y podrían estar vinculados con billetes falsos
+
+
+# 8) Matriz de correlación (como tu imshow)
+
+corr = df[["variance","skewness","curtosis","entropy"]].corr()
+fig = px.imshow(corr, text_auto=True, title="Matriz de correlación (features)")
+fig.show()
+print(corr)
+
+#Conclusión: El skewness y curtosis se comportan al revés (−0.79): cuando la distribución se inclina mucho, deja de ser tan puntiaguda. También, si hay más inclinación, suele haber menos desorden (skewness con entropía = −0.53). En cambio, cuando la distribución es muy puntiaguda y con colas, hay más desorden (curtosis con entropía = +0.32). La varianza se relaciona poco con las demás: si la montaña es más ancha, hay algo más de inclinación y desorden, y menos pico.
+
+# 9)Boxplots por clase (uno por uno)
+import plotly.express as px
+
+features = ["variance", "skewness", "curtosis", "entropy"]
+
+for col in features:
+    fig = px.box(
+        df, x="class", y=col, points="outliers",
+        title=f"{col}: distribución por clase (0=auténtico, 1=falso)"
+    )
+    fig.update_xaxes(tickmode="array", tickvals=[0,1], ticktext=["0 (Auténtico)","1 (Falso)"])
+    fig.show()
+
+
+#Conclusión variance:Los billetes auténticos suelen tener variance positiva (mayores a 0) y Los billetes falsos suelen tener variance negativa (menores a 0).
+#Conclusión skewness:Los billetes auténticos suelen tener asimetría hacia la derecha,los falsos suelen tener asimetría neutra o hacia la izquierda  
+#Conclusión curtosis:Los billetes falsos presentan más casos con curtosis muy alta —es decir, picos muy marcados y valores extremos en la textura—, mientras que los auténticos rara vez alcanzan esos extremos. 
+#Conclusión entropía: tienen cajas muy parecidas, no se distingue bien entre auténticos y falsos: los dos grupos se comportan casi igual.
+
+# 10)Medias por clase (vista resumida)
+
+prom = df.groupby("class")[features].mean().reset_index()
+prom["class"] = prom["class"].map({0: "0 (Auténtico)", 1: "1 (Falso)"})
+
+fig = px.bar(
+    prom.melt(id_vars="class", var_name="feature", value_name="mean"),
+    x="feature", y="mean", color="class", barmode="group",
+    title="Promedio de cada feature por clase"
+)
+fig.show()
+
+#conclusión: la “montaña” de valores está un poco corrida a la derecha y es más ancha (más contraste) es mas propable que sea autentico el billete, pero es mas probable que sea falso si a montaña se inclina a la izquierda o no se inclina, es más estrecha y a veces tiene un pico exagerado.
+#variance > 0 y skewness > 0 → más probable Auténtico.
+#variance < 0 y/o curtosis alta → más probable Falso.
