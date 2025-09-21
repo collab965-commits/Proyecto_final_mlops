@@ -225,3 +225,30 @@ F1-score: 1.00
 
 
 📸 ![alt text](image-5.png)
+
+📌 Conclusión Final
+
+Este proyecto implementó un flujo completo de ETL → Feature Engineering → Entrenamiento de Modelos → Optimización de Hiperparámetros → Seguimiento con MLflow, logrando un sistema confiable para detectar billetes falsos a partir de sus características estadísticas.
+
+El mejor modelo encontrado fue un RandomForestClassifier optimizado con Optuna, alcanzando un desempeño casi perfecto en el conjunto de prueba:
+
+Accuracy (Test): ~1.00
+
+F1-Score (Test): ~1.00
+
+Precisión y Recall: cercanos al 100%
+
+
+🔑 Aportes clave del Feature Engineering
+
+Durante el proceso de ingeniería de características se crearon nuevas variables derivadas de los datos originales (variance, skewness, curtosis, entropy), que mejoraron significativamente la capacidad del modelo. Algunas de ellas fueron:
+
+var_entropy_ratio → Relación entre la varianza y la entropía. Ayuda a medir cuánto “ruido” hay en la distribución en comparación con la variabilidad de los datos.
+
+magnitude → Una medida combinada de la intensidad de las variables principales. Resume en un solo número la fuerza global de las características estadísticas.
+
+abs_skewness → Valor absoluto de la asimetría. Permite identificar cuánto se desvían los datos de una distribución simétrica, sin importar hacia qué lado.
+
+curtosis_minus_skewness → Diferencia entre curtosis (qué tan “picuda” o “plana” es la distribución) y asimetría. Sirve para capturar comportamientos anómalos en los datos que diferencian billetes falsos de auténticos.
+
+Estas nuevas variables dieron al modelo más información estructural sobre los datos, mejorando su poder predictivo.
