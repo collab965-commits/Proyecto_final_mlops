@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/537002863342184639/88990678ea5c410abb91a891c35517ae/artifacts
+end_time: 1758477837425
+entry_point_name: ''
+experiment_id: '537002863342184639'
+lifecycle_stage: active
+run_id: 88990678ea5c410abb91a891c35517ae
+run_name: honorable-shrike-609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758477830695
+status: 3
+tags: []
+user_id: Usuario

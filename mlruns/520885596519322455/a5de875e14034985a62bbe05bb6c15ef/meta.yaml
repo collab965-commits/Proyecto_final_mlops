@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/a5de875e14034985a62bbe05bb6c15ef/artifacts
+end_time: 1758480350776
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: a5de875e14034985a62bbe05bb6c15ef
+run_name: wise-hen-34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480345012
+status: 3
+tags: []
+user_id: Usuario

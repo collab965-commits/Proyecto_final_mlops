@@ -1,0 +1,13 @@
+digest: 61527d5d
+name: dataset
+profile: '{"num_rows": 412, "num_elements": 3708}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "variance", "required": true},
+  {"type": "double", "name": "skewness", "required": true}, {"type": "double", "name":
+  "curtosis", "required": true}, {"type": "double", "name": "entropy", "required":
+  true}, {"type": "double", "name": "var_entropy_ratio", "required": true}, {"type":
+  "double", "name": "magnitude", "required": true}, {"type": "string", "name": "bucket_curtosis",
+  "required": true}, {"type": "double", "name": "abs_skewness", "required": true},
+  {"type": "double", "name": "curtosis_minus_skewness", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Usuario", "mlflow.source.name": "c:\\Users\\Usuario\\Phyton
+  1\\venv\\Lib\\site-packages\\ipykernel_launcher.py", "mlflow.source.type": "LOCAL"}}'
+source_type: code

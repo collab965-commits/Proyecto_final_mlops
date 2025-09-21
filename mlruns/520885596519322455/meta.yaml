@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/520885596519322455
+creation_time: 1758480248191
+experiment_id: '520885596519322455'
+last_update_time: 1758480248191
+lifecycle_stage: active
+name: optuna_RandomForestClassifier

@@ -100,3 +100,128 @@ entropía: tienen cajas muy parecidas, no se distingue bien entre auténticos y 
 
 variance > 0 y skewness > 0 → más probable Auténtico.
 variance < 0 y/o curtosis alta → más probable Falso.
+
+
+
+# RESUMEN ENTREGA PARTE 2
+
+Este proyecto implementa un pipeline completo de Machine Learning con enfoque en MLOps, cuyo objetivo es entrenar y optimizar un modelo que clasifique billetes entre verdaderos y falsos.
+
+El flujo completo incluye:
+
+ETL – Extracción y limpieza de los datos desde la fuente original.
+
+Feature Engineering – Creación de nuevas variables que enriquecen el dataset.
+
+Entrenamiento con MLflow – Entrenamiento, tracking de experimentos y logging automático de modelos.
+
+Optimización con Optuna – Búsqueda de hiperparámetros para encontrar el mejor modelo.
+
+Comparación de modelos y métricas – Evaluación en un conjunto de prueba.
+
+🛠️ ETL
+
+El módulo etl.py se encarga de:
+
+Descargar los datos desde el repositorio UCI (data_banknote_authentication).
+
+Convertirlos en un DataFrame de Pandas.
+
+Asignar nombres a las columnas.
+
+✅ Resultado: un dataset limpio y estructurado listo para el entrenamiento.
+
+🧪 Feature Engineering
+
+El módulo feature_engineer.py aplica transformaciones sobre el dataset original:
+
+Nuevas variables creadas:
+
+var_entropy_ratio
+
+magnitude
+
+abs_skewness
+
+curtosis_minus_skewness
+
+bucket_curtosis (feature categórica creada a partir de discretización).
+
+✅ Resultado: un dataset enriquecido que mejora la capacidad predictiva del modelo.
+
+⚙️ MLflow – Tracking de Experimentos
+
+Se utilizó MLflow para:
+
+Registrar parámetros de los modelos.
+
+Guardar métricas de entrenamiento y prueba (accuracy, F1-score, etc).
+
+Almacenar los modelos entrenados para su reutilización.
+
+📸 Pantallazos importantes:
+
+1) Servidor de MLflow mostrando los experimentos creados.
+📸 ![alt text](image.png)
+
+2) Resultados de RandomForest (baseline y V2) con Train y Test Accuracy.
+
+📸 ![alt text](image-1.png)
+📸 ![alt text](image-2.png)
+
+
+3)Resultados de xgboost
+📸 ![alt text](image-3.png)
+
+4) Resultados de RandomForest + Optuna mostrando el mejor run.
+📸 ![alt text](image-4.png)
+Nota: En la imagen se observa el listado de runs generados por Optuna en MLflow. Cada run corresponde a un conjunto distinto de hiperparámetros probados para el modelo RandomForestClassifier.
+El mejor run se identifica en la parte superior de la tabla (mayor valor de f1).
+
+
+🔍 Optimización con Optuna
+
+Se implementó la clase TrainMlflowOptuna para optimizar hiperparámetros.
+
+Se definió un espacio de búsqueda para n_estimators, max_depth, min_samples_split, min_samples_leaf y max_features.
+
+Se ejecutaron 30 trials registrando todo en MLflow.
+
+📊 Visualizaciones de Optuna:
+
+Se incluyeron visualizaciones para analizar el proceso de optimización:
+
+Optimization History Plot: muestra cómo fue mejorando la métrica F1 a lo largo de los trials.
+
+📸 gráfico de plot_optimization_history: ![alt text](image-6.png)
+
+Hyperparameter Importances: muestra qué hiperparámetros tuvieron mayor impacto en el resultado.
+📸 gráfico de plot_param_importances: ![alt text](image-7.png)
+
+
+Importancia de hiperparámetros.
+
+
+🏆 Resultados Finales
+
+El mejor modelo encontrado fue:
+
+Modelo: RandomForestClassifier
+
+Hiperparámetros:
+
+{'n_estimators': 187, 'max_depth': 5, 'min_samples_split': 9, 'min_samples_leaf': 5, 'max_features': 'sqrt'}
+
+
+Métricas en test:
+
+Accuracy: 1.00
+
+Precision: 0.99 – 1.00
+
+Recall: 0.99 – 1.00
+
+F1-score: 1.00
+
+
+📸 ![alt text](image-5.png)

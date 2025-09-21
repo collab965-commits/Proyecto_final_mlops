@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/92b30d35953241ccb4c85c3e8fc5fcc9/artifacts
+end_time: 1758481133195
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 92b30d35953241ccb4c85c3e8fc5fcc9
+run_name: abundant-pig-930
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758481127919
+status: 3
+tags: []
+user_id: Usuario

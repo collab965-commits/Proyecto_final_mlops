@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/361f7d7b5afa4d37b954789770a0ae33/artifacts
+end_time: 1758480469982
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 361f7d7b5afa4d37b954789770a0ae33
+run_name: overjoyed-bug-355
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480464574
+status: 3
+tags: []
+user_id: Usuario

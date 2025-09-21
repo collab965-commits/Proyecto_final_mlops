@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/a52a58264ceb4b188364ba173580e8db/artifacts
+end_time: 1758480302629
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: a52a58264ceb4b188364ba173580e8db
+run_name: charming-kit-176
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480296995
+status: 3
+tags: []
+user_id: Usuario

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/fb293deb97f84c218e35ce3c62709a5a/artifacts
+end_time: 1758480308843
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: fb293deb97f84c218e35ce3c62709a5a
+run_name: crawling-snail-882
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480303139
+status: 3
+tags: []
+user_id: Usuario

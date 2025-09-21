@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/2a870d1bfb064dfcab320c0fba499ea9/artifacts
+end_time: 1758481127461
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 2a870d1bfb064dfcab320c0fba499ea9
+run_name: mercurial-goose-164
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758481121603
+status: 3
+tags: []
+user_id: Usuario

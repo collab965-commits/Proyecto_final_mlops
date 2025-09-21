@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/7db3d031d3cc4d7383a168d0bf7c88fb/artifacts
+end_time: 1758480464035
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 7db3d031d3cc4d7383a168d0bf7c88fb
+run_name: funny-frog-347
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480458503
+status: 3
+tags: []
+user_id: Usuario

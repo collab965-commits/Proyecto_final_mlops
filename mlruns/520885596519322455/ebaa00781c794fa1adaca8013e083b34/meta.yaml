@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/ebaa00781c794fa1adaca8013e083b34/artifacts
+end_time: 1758480290481
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: ebaa00781c794fa1adaca8013e083b34
+run_name: fun-foal-646
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480284965
+status: 3
+tags: []
+user_id: Usuario

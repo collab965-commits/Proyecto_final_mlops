@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/511832567646551150/ca3b67dc438e4b479c6108150671890c/artifacts
+end_time: 1758479696880
+entry_point_name: ''
+experiment_id: '511832567646551150'
+lifecycle_stage: active
+run_id: ca3b67dc438e4b479c6108150671890c
+run_name: big-lynx-21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758479685198
+status: 3
+tags: []
+user_id: Usuario

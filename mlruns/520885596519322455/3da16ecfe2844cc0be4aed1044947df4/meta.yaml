@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/3da16ecfe2844cc0be4aed1044947df4/artifacts
+end_time: 1758481149777
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 3da16ecfe2844cc0be4aed1044947df4
+run_name: peaceful-ray-608
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758481145807
+status: 4
+tags: []
+user_id: Usuario

@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/519298823862010791
+creation_time: 1758480241999
+experiment_id: '519298823862010791'
+last_update_time: 1758480241999
+lifecycle_stage: active
+name: billetes-random-forest-optuna

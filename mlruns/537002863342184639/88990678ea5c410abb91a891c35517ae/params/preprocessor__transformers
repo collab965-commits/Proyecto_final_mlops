@@ -1,0 +1,2 @@
+[('num', Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scaler', StandardScaler())]), ['variance', 'skewness', 'curtosis', 'entropy', 'var_entropy_ratio', 'magnitude', 'abs_skewness', 'curtosis_minus_skewness'])]

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/890e24662a18400bad5f7716b1352935/artifacts
+end_time: 1758480326213
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 890e24662a18400bad5f7716b1352935
+run_name: funny-goose-917
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480321023
+status: 3
+tags: []
+user_id: Usuario

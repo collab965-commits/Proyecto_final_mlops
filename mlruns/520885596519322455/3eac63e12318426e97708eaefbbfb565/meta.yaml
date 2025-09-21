@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/3eac63e12318426e97708eaefbbfb565/artifacts
+end_time: 1758480457965
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 3eac63e12318426e97708eaefbbfb565
+run_name: aged-foal-904
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480452236
+status: 3
+tags: []
+user_id: Usuario

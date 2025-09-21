@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/3242909d63a04419bc19f866454cd917/artifacts
+end_time: 1758480438559
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 3242909d63a04419bc19f866454cd917
+run_name: intrigued-hound-958
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480432648
+status: 3
+tags: []
+user_id: Usuario

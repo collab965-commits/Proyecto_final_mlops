@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/36e139386f614c16960941d5d20dd2e9/artifacts
+end_time: 1758480254249
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 36e139386f614c16960941d5d20dd2e9
+run_name: exultant-robin-322
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480248517
+status: 3
+tags: []
+user_id: Usuario

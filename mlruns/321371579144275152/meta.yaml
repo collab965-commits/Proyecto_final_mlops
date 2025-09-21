@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/321371579144275152
+creation_time: 1758479131867
+experiment_id: '321371579144275152'
+last_update_time: 1758479131867
+lifecycle_stage: active
+name: billetes-xgboost

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/fea18745cd90473baba2a65a08788cfd/artifacts
+end_time: 1758480314842
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: fea18745cd90473baba2a65a08788cfd
+run_name: unruly-bat-446
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480309323
+status: 3
+tags: []
+user_id: Usuario

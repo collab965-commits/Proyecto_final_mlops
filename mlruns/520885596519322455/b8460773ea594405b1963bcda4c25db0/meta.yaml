@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/b8460773ea594405b1963bcda4c25db0/artifacts
+end_time: 1758480425748
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: b8460773ea594405b1963bcda4c25db0
+run_name: big-conch-532
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480419434
+status: 3
+tags: []
+user_id: Usuario

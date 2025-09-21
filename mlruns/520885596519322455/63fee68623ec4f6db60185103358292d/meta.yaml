@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/63fee68623ec4f6db60185103358292d/artifacts
+end_time: 1758480357278
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 63fee68623ec4f6db60185103358292d
+run_name: legendary-donkey-311
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480351236
+status: 3
+tags: []
+user_id: Usuario

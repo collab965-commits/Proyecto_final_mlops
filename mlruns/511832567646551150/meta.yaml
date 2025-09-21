@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/511832567646551150
+creation_time: 1758479685072
+experiment_id: '511832567646551150'
+last_update_time: 1758479685072
+lifecycle_stage: active
+name: billetes-random-forest-V2

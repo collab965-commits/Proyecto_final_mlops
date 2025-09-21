@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/519298823862010791/f5d088799af0433b93b45fc10d3d7c47/artifacts
+end_time: 1758480247854
+entry_point_name: ''
+experiment_id: '519298823862010791'
+lifecycle_stage: active
+run_id: f5d088799af0433b93b45fc10d3d7c47
+run_name: dashing-loon-443
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480242047
+status: 3
+tags: []
+user_id: Usuario

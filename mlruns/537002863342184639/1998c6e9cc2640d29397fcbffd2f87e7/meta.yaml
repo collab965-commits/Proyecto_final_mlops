@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/537002863342184639/1998c6e9cc2640d29397fcbffd2f87e7/artifacts
+end_time: 1758479108990
+entry_point_name: ''
+experiment_id: '537002863342184639'
+lifecycle_stage: active
+run_id: 1998c6e9cc2640d29397fcbffd2f87e7
+run_name: wise-grub-66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758479101520
+status: 3
+tags: []
+user_id: Usuario

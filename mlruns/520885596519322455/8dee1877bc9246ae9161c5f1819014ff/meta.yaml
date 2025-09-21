@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/8dee1877bc9246ae9161c5f1819014ff/artifacts
+end_time: 1758480338410
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 8dee1877bc9246ae9161c5f1819014ff
+run_name: gentle-tern-219
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480332519
+status: 3
+tags: []
+user_id: Usuario

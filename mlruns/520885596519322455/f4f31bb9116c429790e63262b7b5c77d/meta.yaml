@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/f4f31bb9116c429790e63262b7b5c77d/artifacts
+end_time: 1758480296532
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: f4f31bb9116c429790e63262b7b5c77d
+run_name: glamorous-chimp-777
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758480290922
+status: 3
+tags: []
+user_id: Usuario

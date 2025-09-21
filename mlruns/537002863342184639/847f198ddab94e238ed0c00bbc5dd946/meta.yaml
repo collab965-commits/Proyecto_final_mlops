@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/537002863342184639/847f198ddab94e238ed0c00bbc5dd946/artifacts
+end_time: 1758477816444
+entry_point_name: ''
+experiment_id: '537002863342184639'
+lifecycle_stage: active
+run_id: 847f198ddab94e238ed0c00bbc5dd946
+run_name: legendary-wasp-403
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758477802668
+status: 3
+tags: []
+user_id: Usuario
