@@ -1,0 +1,39 @@
+artifact_path: mlflow-artifacts:/520885596519322455/models/m-5f38b063bb8e4d24a986de84fef7916d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+is_signature_from_type_hint: false
+mlflow_version: 3.4.0
+model_id: m-5f38b063bb8e4d24a986de84fef7916d
+model_size_bytes: 744217
+model_uuid: m-5f38b063bb8e4d24a986de84fef7916d
+prompts: null
+run_id: f7859c8471e64de1917c40fc931f815e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "variance", "required": true}, {"type": "double",
+    "name": "skewness", "required": true}, {"type": "double", "name": "curtosis",
+    "required": true}, {"type": "double", "name": "entropy", "required": true}, {"type":
+    "double", "name": "var_entropy_ratio", "required": true}, {"type": "double", "name":
+    "magnitude", "required": true}, {"type": "string", "name": "bucket_curtosis",
+    "required": true}, {"type": "double", "name": "abs_skewness", "required": true},
+    {"type": "double", "name": "curtosis_minus_skewness", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-10-08 04:29:01.711602'

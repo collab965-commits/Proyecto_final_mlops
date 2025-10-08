@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/435f2872ba004b379a43bf94cf2e4aaf/artifacts
+end_time: 1759898037422
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 435f2872ba004b379a43bf94cf2e4aaf
+run_name: puzzled-dolphin-842
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759898032612
+status: 3
+tags: []
+user_id: Usuario

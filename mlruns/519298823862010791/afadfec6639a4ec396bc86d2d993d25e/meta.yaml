@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/519298823862010791/afadfec6639a4ec396bc86d2d993d25e/artifacts
+end_time: 1759897662903
+entry_point_name: ''
+experiment_id: '519298823862010791'
+lifecycle_stage: active
+run_id: afadfec6639a4ec396bc86d2d993d25e
+run_name: rebellious-bass-950
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897656292
+status: 3
+tags: []
+user_id: Usuario

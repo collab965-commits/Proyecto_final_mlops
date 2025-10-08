@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/3ce26938c639442692c97cda50d7fea7/artifacts
+end_time: 1759897740474
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 3ce26938c639442692c97cda50d7fea7
+run_name: abrasive-wolf-643
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897734880
+status: 3
+tags: []
+user_id: Usuario

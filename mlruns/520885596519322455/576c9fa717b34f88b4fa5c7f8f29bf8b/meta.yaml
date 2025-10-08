@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/576c9fa717b34f88b4fa5c7f8f29bf8b/artifacts
+end_time: 1759897766310
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 576c9fa717b34f88b4fa5c7f8f29bf8b
+run_name: carefree-sloth-40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897760222
+status: 3
+tags: []
+user_id: Usuario

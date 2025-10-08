@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/f152def756c74e338e6cf4e866559967/artifacts
+end_time: 1759897702109
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: f152def756c74e338e6cf4e866559967
+run_name: rare-pug-603
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897696202
+status: 3
+tags: []
+user_id: Usuario

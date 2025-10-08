@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/e3e597613b7045e29b2630ae97a7d302/artifacts
+end_time: 1759897669683
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: e3e597613b7045e29b2630ae97a7d302
+run_name: skittish-shoat-319
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897663514
+status: 3
+tags: []
+user_id: Usuario

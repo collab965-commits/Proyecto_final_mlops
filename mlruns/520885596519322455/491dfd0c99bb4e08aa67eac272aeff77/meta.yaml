@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/491dfd0c99bb4e08aa67eac272aeff77/artifacts
+end_time: 1759897772462
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 491dfd0c99bb4e08aa67eac272aeff77
+run_name: serious-ray-636
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897766770
+status: 3
+tags: []
+user_id: Usuario

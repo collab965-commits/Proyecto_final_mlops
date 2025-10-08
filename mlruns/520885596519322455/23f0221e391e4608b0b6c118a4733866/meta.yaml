@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/23f0221e391e4608b0b6c118a4733866/artifacts
+end_time: 1759897861916
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 23f0221e391e4608b0b6c118a4733866
+run_name: best_model_RandomForestClassifier
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897851002
+status: 3
+tags: []
+user_id: Usuario

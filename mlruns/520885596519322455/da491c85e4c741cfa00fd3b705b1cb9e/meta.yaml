@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/da491c85e4c741cfa00fd3b705b1cb9e/artifacts
+end_time: 1759897811275
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: da491c85e4c741cfa00fd3b705b1cb9e
+run_name: stylish-chimp-139
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897805399
+status: 3
+tags: []
+user_id: Usuario

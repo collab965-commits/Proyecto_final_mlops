@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/b73c31b1875f46abaec3fc3374a9147e/artifacts
+end_time: 1759897714769
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: b73c31b1875f46abaec3fc3374a9147e
+run_name: mysterious-pig-871
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897708929
+status: 3
+tags: []
+user_id: Usuario

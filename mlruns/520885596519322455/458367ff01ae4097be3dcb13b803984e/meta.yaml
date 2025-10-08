@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/458367ff01ae4097be3dcb13b803984e/artifacts
+end_time: 1759897753581
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 458367ff01ae4097be3dcb13b803984e
+run_name: bald-sloth-393
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897747509
+status: 3
+tags: []
+user_id: Usuario

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/8e4b0791bd5f43cda2fb9e2487e83cc2/artifacts
+end_time: 1759897791843
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 8e4b0791bd5f43cda2fb9e2487e83cc2
+run_name: whimsical-fowl-769
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897785867
+status: 3
+tags: []
+user_id: Usuario

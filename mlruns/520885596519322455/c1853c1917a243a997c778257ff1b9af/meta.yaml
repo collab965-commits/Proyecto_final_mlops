@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/c1853c1917a243a997c778257ff1b9af/artifacts
+end_time: 1759897817785
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: c1853c1917a243a997c778257ff1b9af
+run_name: intelligent-crow-984
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897811788
+status: 3
+tags: []
+user_id: Usuario

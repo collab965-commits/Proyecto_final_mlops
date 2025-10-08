@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/62e04fb038434ee2aaf7302ba09d09f8/artifacts
+end_time: 1759897721661
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 62e04fb038434ee2aaf7302ba09d09f8
+run_name: nimble-hound-756
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897715271
+status: 3
+tags: []
+user_id: Usuario

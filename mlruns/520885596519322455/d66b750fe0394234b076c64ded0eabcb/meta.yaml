@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/d66b750fe0394234b076c64ded0eabcb/artifacts
+end_time: 1759897804866
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: d66b750fe0394234b076c64ded0eabcb
+run_name: treasured-bass-596
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897798621
+status: 3
+tags: []
+user_id: Usuario

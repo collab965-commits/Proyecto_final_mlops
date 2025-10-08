@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/6fa22fceb6a745e98bca703ad9d7eec0/artifacts
+end_time: 1759897682181
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 6fa22fceb6a745e98bca703ad9d7eec0
+run_name: flawless-wren-673
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897676112
+status: 3
+tags: []
+user_id: Usuario

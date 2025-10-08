@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/511832567646551150/7439d141ce9d4e4c8d5343e331216376/artifacts
+end_time: 1759897654247
+entry_point_name: ''
+experiment_id: '511832567646551150'
+lifecycle_stage: active
+run_id: 7439d141ce9d4e4c8d5343e331216376
+run_name: dashing-gnat-862
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897642974
+status: 3
+tags: []
+user_id: Usuario

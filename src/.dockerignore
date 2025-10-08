@@ -1,0 +1,91 @@
+# ==========================================
+# 🧹 .dockerignore - Proyecto Billetes MLOps
+# ==========================================
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Entornos virtuales
+.env
+.venv/
+env/
+venv/
+
+# MLflow y modelos
+mlruns/
+mlartifacts/
+src/app/train/mlruns/
+src/app/train/mlartifacts/
+src/app/train/models/
+src/app/train/backend.db
+models/
+
+# Data y artefactos
+data/
+datasets/
+*.csv
+*.json
+*.parquet
+*.pkl
+*.db
+*.sqlite*
+
+# Notebooks y experimentación
+.ipynb_checkpoints/
+notebooks/experimentacion/
+notebooks/pruebas_temp/
+*.ipynb_checkpoints
+
+# IDE y OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+
+# Logs y temporales
+*.log
+*.tmp
+tmp/
+temp/
+
+# Documentos
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.md
+LICENSE
+Makefile
+
+# No ignorar estos (necesarios)
+!pyproject.toml
+!Dockerfile
+!docker-compose.yml
+!src/

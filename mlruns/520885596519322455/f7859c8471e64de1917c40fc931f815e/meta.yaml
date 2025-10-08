@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/f7859c8471e64de1917c40fc931f815e/artifacts
+end_time: 1759897747033
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: f7859c8471e64de1917c40fc931f815e
+run_name: gaudy-dove-193
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897740957
+status: 3
+tags: []
+user_id: Usuario

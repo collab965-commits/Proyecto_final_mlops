@@ -1,0 +1,73 @@
+version: "3.9"
+
+services:
+  # Servicio de entrenamiento
+  train:
+    build: .
+    image: billetes-mlops:latest
+    container_name: billetes-train
+    volumes:
+      - ./src:/app/src
+      - ./notebooks:/app/notebooks
+      - ./models:/app/models
+      - ./mlruns:/app/mlruns
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5001
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    command: python -m src.app.train.task_train
+    depends_on:
+      mlflow-server:
+        condition: service_healthy
+    networks:
+      - mlops-network
+
+  # Servidor MLflow
+  mlflow-server:
+    image: billetes-mlops:latest
+    container_name: mlflow-server
+    volumes:
+      - ./mlruns:/mlruns
+      - ./mlartifacts:/mlartifacts
+    environment:
+      - MLFLOW_SERVER_HOST=0.0.0.0
+      - MLFLOW_SERVER_PORT=5001
+    ports:
+      - "5001:5001"
+    command: >
+      sh -c "mkdir -p /mlruns /mlartifacts &&
+             mlflow server --backend-store-uri sqlite:////mlruns/backend.db
+             --default-artifact-root /mlartifacts
+             --host 0.0.0.0 --port 5001 --serve-artifacts"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - mlops-network
+
+  # Servicio de predicción batch
+  predict:
+    build: .
+    image: billetes-mlops:latest
+    container_name: billetes-predict
+    volumes:
+      - ./src:/app/src
+      - ./models:/app/models
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5001
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    command: python -m src.app.pred_batch.queries.prediction
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mlflow-server
+    networks:
+      - mlops-network
+
+networks:
+  mlops-network:
+    driver: bridge

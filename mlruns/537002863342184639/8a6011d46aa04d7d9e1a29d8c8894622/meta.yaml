@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/537002863342184639/8a6011d46aa04d7d9e1a29d8c8894622/artifacts
+end_time: 1759897619700
+entry_point_name: ''
+experiment_id: '537002863342184639'
+lifecycle_stage: active
+run_id: 8a6011d46aa04d7d9e1a29d8c8894622
+run_name: silent-snake-914
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897604503
+status: 3
+tags: []
+user_id: Usuario

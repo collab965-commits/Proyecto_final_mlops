@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/321371579144275152/25bb39bb4d18462fb2d478fffc010dfd/artifacts
+end_time: 1759897638099
+entry_point_name: ''
+experiment_id: '321371579144275152'
+lifecycle_stage: active
+run_id: 25bb39bb4d18462fb2d478fffc010dfd
+run_name: bemused-panda-367
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897631641
+status: 3
+tags: []
+user_id: Usuario

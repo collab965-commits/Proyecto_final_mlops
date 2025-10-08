@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/1b10cd3d97994e4ab4f79c195d5bcc4e/artifacts
+end_time: 1759897798116
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 1b10cd3d97994e4ab4f79c195d5bcc4e
+run_name: whimsical-bear-339
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897792331
+status: 3
+tags: []
+user_id: Usuario

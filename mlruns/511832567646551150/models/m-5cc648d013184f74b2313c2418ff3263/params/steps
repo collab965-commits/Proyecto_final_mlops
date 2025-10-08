@@ -1,0 +1,7 @@
+[('preprocessor', ColumnTransformer(transformers=[('num',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scaler', StandardScaler())]),
+                                 ['variance', 'skewness', 'curtosis', 'entropy',
+                                  'var_entropy_ratio', 'magnitude',
+                                  'abs_skewness', 'curtosis_minus_skewness'])])), ('classifier', RandomForestClassifier(max_features=None, n_estimators=1000, random_state=42))]

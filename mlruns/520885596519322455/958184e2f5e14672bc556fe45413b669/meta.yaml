@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/958184e2f5e14672bc556fe45413b669/artifacts
+end_time: 1759897675668
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 958184e2f5e14672bc556fe45413b669
+run_name: angry-stork-23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897670119
+status: 3
+tags: []
+user_id: Usuario

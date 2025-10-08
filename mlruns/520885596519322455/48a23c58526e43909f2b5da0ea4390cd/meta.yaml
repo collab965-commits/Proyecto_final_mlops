@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/48a23c58526e43909f2b5da0ea4390cd/artifacts
+end_time: 1759897830709
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 48a23c58526e43909f2b5da0ea4390cd
+run_name: skittish-colt-835
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897824735
+status: 3
+tags: []
+user_id: Usuario

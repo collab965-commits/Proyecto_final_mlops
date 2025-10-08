@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/520885596519322455/730d6103162247ce82f9aca17583fb4d/artifacts
+end_time: 1759897824218
+entry_point_name: ''
+experiment_id: '520885596519322455'
+lifecycle_stage: active
+run_id: 730d6103162247ce82f9aca17583fb4d
+run_name: secretive-gull-23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759897818285
+status: 3
+tags: []
+user_id: Usuario
