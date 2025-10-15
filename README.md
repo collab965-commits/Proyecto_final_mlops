@@ -1,6 +1,7 @@
 # Proyecto_final_mlops
 1) Descripción corta
 
+
 Construimos un modelo para detectar billetes falsos usando el dataset Banknote Authentication de UCI. El dataset ya viene en formato tabular (no hay imágenes): cada fila representa un billete y sus columnas son estadísticos calculados sobre la textura del billete (a partir de una transformada wavelet).
 
 2) Problema y objetivo de negocio
